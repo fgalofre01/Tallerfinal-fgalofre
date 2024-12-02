@@ -7,7 +7,7 @@ class Guarderia():
     
     animals = {
         "huron": Huron("Huron", 10.5, 5),
-        "boa constrictor": Boa_Constrictor("Boa Constrictor", 12.8, 7),
+        "boa_constrictor": Boa_Constrictor("Boa_Constrictor", 12.8, 7),
         "perro": Perro("Perro", 12.6, 4),
         "gato": Gato("Gato", 6.7, 6)
         }
