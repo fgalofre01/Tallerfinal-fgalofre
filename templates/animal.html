@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include '/scripts.html'  %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonido de los Animales</title>
+</head>
+<main class="main text-center py-4"> 
+<body>
+    {% if error %}
+        <h1>{{ error }}</h1>
+        <a href="/" class="btn btn-info">Regresar</a>
+    {% else %}
+        <h1>{{ animal.nombre }}</h1>
+        <p>{{ animal.hacer_sonido() }}</p>
+        <a href="/" class="btn btn-info">Regresar</a>
+    {% endif %}
+</body>
+</main>
+</html>

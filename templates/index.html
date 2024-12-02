@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include '/scripts.html'  %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guarderia API</title>
+</head>
+<br><br>
+<main style="margin-left: 25rem; background-color:rgb(117, 184, 223); width: 700px; height: 25rem;"> 
+<body>
+    <h1>Bienvenidos a la guarderia</h1>
+    <p>Para verificar el sonido del animal, por favor escoger cualquiera de las opciones:</p>
+    <div style="margin-left: 8rem;">
+    <ul>
+        {% for animal in animals %}
+        <li><a class="btn btn-warning" href="/animal/{{ animal }}">{{ animal.capitalize() }}</a></li>
+        <br>
+        {% endfor %}
+    </ul>
+</div>
+</body>
+</main>
+</html>
